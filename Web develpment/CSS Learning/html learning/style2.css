@@ -1,0 +1,32 @@
+*{
+    height: 200vh;
+    width: 150vw;
+}
+.container{
+    background: rgb(219, 230, 246);
+    border: 2px dotted darkblue;
+    height: 300px;
+    width: 300px;
+    margin: 100px;
+}
+.red{
+    background: rgb(228, 34, 0);
+    height: 100px;
+    width: 100px;
+}
+.blue{
+    background: rgb(3, 7, 255);
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+.green{
+    background: rgb(101, 248, 9);
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    left: 2px;
+}
