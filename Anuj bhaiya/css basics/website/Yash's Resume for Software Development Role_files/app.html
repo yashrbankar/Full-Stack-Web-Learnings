@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- saved from url=(0086)chrome-extension://khbjeknhjcdbijopmdbnjpncellpbjhf/scripts/injected/flyout/app.html#/ -->
+<html ng-app="copycat" sync-on-scroll="" class="ng-scope ng-isolate-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <title>Copycat</title>
+    
+    <link rel="stylesheet" href="chrome-extension://khbjeknhjcdbijopmdbnjpncellpbjhf/scripts/injected/flyout/vendor.css">
+    <link rel="stylesheet" href="chrome-extension://khbjeknhjcdbijopmdbnjpncellpbjhf/scripts/injected/flyout/app.css">
+  </head>
+  <body>
+    <div class="container copycat-container">
+      <nav ng-controller="NavbarController as view" class="ng-scope">
+        <header class="nav-header">
+          <h4>
+            <img src="chrome-extension://khbjeknhjcdbijopmdbnjpncellpbjhf/scripts/injected/flyout/images/icon-19.png" class="copycat-logo">opycat
+          </h4>
+          <a ng-show="!view.isActive(&#39;/options&#39;)" class="options" href="chrome-extension://khbjeknhjcdbijopmdbnjpncellpbjhf/scripts/injected/flyout/app.html" ng-click="view.goToOptions()">
+            <span class="glyphicon glyphicon-cog"></span> Options
+          </a>
+          <a ng-show="view.isActive(&#39;/options&#39;)" class="options ng-hide" href="chrome-extension://khbjeknhjcdbijopmdbnjpncellpbjhf/scripts/injected/flyout/app.html" ng-click="view.goBack()">
+            <span class="glyphicon glyphicon-chevron-left"></span> Back
+          </a>
+        </header>
+        <ul class="nav nav-tabs" ng-show="!view.isActive(&#39;/options&#39;)">
+          <li ng-class="{ active: view.isActive(&#39;/&#39;) }" class="active">
+            <a href="chrome-extension://khbjeknhjcdbijopmdbnjpncellpbjhf/scripts/injected/flyout/app.html" ng-click="view.goToClips()">Clips</a>
+          </li>
+          <li ng-class="{ active: view.isActive(&#39;/archive&#39;) }">
+            <a href="chrome-extension://khbjeknhjcdbijopmdbnjpncellpbjhf/scripts/injected/flyout/app.html" ng-click="view.goToArchive()">Trash</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- ngView:  --><div ng-view="" class="copycat-contents ng-scope"><div ng-hide="view.loaded" class="loading ng-binding ng-scope ng-isolate-scope ng-hide" fss-loading="" text="Loading">Loading <span class="dot-loading">  <span class="dot dot_1"></span>  <span class="dot dot_2"></span>  <span class="dot dot_3"></span></span></div> <div ng-show="view.clips.length === 0 &amp;&amp; view.loaded" class="tutorial-page ng-scope"> <h4>No clips here!</h4> <p> <img src="chrome-extension://khbjeknhjcdbijopmdbnjpncellpbjhf/scripts/injected/flyout/images/screenshot-clip-selection.png" alt="Screenshot of right-clicking highlighted text."> <br> Right-click on highlighted text and select "Copycat this Selection" to save text snippets. </p> <p> <img src="chrome-extension://khbjeknhjcdbijopmdbnjpncellpbjhf/scripts/injected/flyout/images/screenshot-copy-image.png" alt="Screenshot of right-clicking an image."> <br> Or select "Copycat this Image" to save images! </p> </div> <!-- ngIf: view.clips.length > 1 --> <!-- ngIf: view.searchText && view.getFilteredCount() === 0 --> <!-- ngRepeat: group in view.groups track by $index --><div ng-repeat="group in view.groups track by $index" class="ng-scope"> <!-- ngIf: group.expanded && ((view.searchText && group.filteredClips.length > 0) || (!view.searchText && group.clips.length > 0)) --> <!-- ngIf: !group.expanded && ((view.searchText && group.filteredClips.length > 0) || (!view.searchText && group.clips.length > 0)) --> <!-- ngIf: (view.searchText && group.filteredClips.length > 0) || (!view.searchText && group.clips.length > 0) --> <ul class="list-group"> <!-- ngRepeat: clip in group.filteredClips = (group.clips | clipListSearchFilter: view.searchText) | orderBy: view.orderByDate track by $index --> </ul> </div><!-- end ngRepeat: group in view.groups track by $index --><div ng-repeat="group in view.groups track by $index" class="ng-scope"> <!-- ngIf: group.expanded && ((view.searchText && group.filteredClips.length > 0) || (!view.searchText && group.clips.length > 0)) --> <!-- ngIf: !group.expanded && ((view.searchText && group.filteredClips.length > 0) || (!view.searchText && group.clips.length > 0)) --> <!-- ngIf: (view.searchText && group.filteredClips.length > 0) || (!view.searchText && group.clips.length > 0) --> <ul class="list-group"> <!-- ngRepeat: clip in group.filteredClips = (group.clips | clipListSearchFilter: view.searchText) | orderBy: view.orderByDate track by $index --> </ul> </div><!-- end ngRepeat: group in view.groups track by $index --><div ng-repeat="group in view.groups track by $index" class="ng-scope"> <!-- ngIf: group.expanded && ((view.searchText && group.filteredClips.length > 0) || (!view.searchText && group.clips.length > 0)) --> <!-- ngIf: !group.expanded && ((view.searchText && group.filteredClips.length > 0) || (!view.searchText && group.clips.length > 0)) --> <!-- ngIf: (view.searchText && group.filteredClips.length > 0) || (!view.searchText && group.clips.length > 0) --> <ul class="list-group"> <!-- ngRepeat: clip in group.filteredClips = (group.clips | clipListSearchFilter: view.searchText) | orderBy: view.orderByDate track by $index --> </ul> </div><!-- end ngRepeat: group in view.groups track by $index --><div ng-repeat="group in view.groups track by $index" class="ng-scope"> <!-- ngIf: group.expanded && ((view.searchText && group.filteredClips.length > 0) || (!view.searchText && group.clips.length > 0)) --> <!-- ngIf: !group.expanded && ((view.searchText && group.filteredClips.length > 0) || (!view.searchText && group.clips.length > 0)) --> <!-- ngIf: (view.searchText && group.filteredClips.length > 0) || (!view.searchText && group.clips.length > 0) --> <ul class="list-group"> <!-- ngRepeat: clip in group.filteredClips = (group.clips | clipListSearchFilter: view.searchText) | orderBy: view.orderByDate track by $index --> </ul> </div><!-- end ngRepeat: group in view.groups track by $index --></div>
+      <div class="footer">© 2015 Follett School Solutions Inc.</div>
+    </div>
+
+    <script src="chrome-extension://khbjeknhjcdbijopmdbnjpncellpbjhf/scripts/injected/flyout/vendor.js"></script>
+
+    <script src="chrome-extension://khbjeknhjcdbijopmdbnjpncellpbjhf/scripts/injected/flyout/app.js"></script>
+  
+
+</body></html>

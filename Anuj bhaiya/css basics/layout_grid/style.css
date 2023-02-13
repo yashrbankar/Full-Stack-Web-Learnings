@@ -1,0 +1,42 @@
+body {
+
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-template-areas: 'hr hr hr'
+        ' nv mn ad'
+        'ft ft ft';
+    gap: 20px;
+}
+
+.red {
+    border: 7px solid red;
+    background-color: coral;
+    height: 30vh;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    grid-area: hr;
+
+}
+
+.nav {
+    grid-area: nv;
+
+}
+
+main {
+    grid-area: mn;
+}
+
+.adver {
+    grid-area: ad;
+
+}
+
+footer {
+    grid-area: ft;
+}
