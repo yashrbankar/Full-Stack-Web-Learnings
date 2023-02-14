@@ -1,0 +1,136 @@
+body{
+    display: grid;
+}
+.container{
+     display: grid;
+     grid-template-columns: repeat(4,70px);
+     grid-template-areas:'res res res res'
+                        'clr clr bck divi'
+                        'no7 no8 no9 mul'
+                        'no4 no5 no6 sb'
+                        'no1 no2 no3 ad'
+                        'no0 no0 no0 eq';
+      /*chidern property */
+    justify-self:  center;
+    align-self: center;
+    /* justify-content: center;
+    align-items: center; */
+    border:  4px double black;
+    padding: 20px;
+    background-color: lightslategray;
+    border-radius: 20px;
+    margin: 10wh;
+    box-shadow: 10px 10px 20px rgb(7, 3, 251);
+}
+.btns{
+    background-color:rgb(120, 125, 170);
+}
+.box{
+    border: 1px solid rgb(6, 6, 6);
+    padding: 20px;
+}
+#box-1{
+    grid-area: res;
+    height: 50px;
+    /* display: none; */
+    background-color: darkgray;
+    text-align: end;
+    padding-top: 30px;
+    font-size: 2rem;
+}
+#box-2{
+    grid-area: res;
+}
+#box-3{
+      grid-area: res;
+}
+#box-4{
+     grid-area: res;
+}
+#box-5{
+    grid-area: clr;
+}
+#box-6{
+    grid-area: clr;
+}
+
+#box-7{
+    grid-area: bck;
+}
+#box-8{
+    grid-area: divi;
+}
+#box-9{
+     grid-area: no7;
+}
+#box-10{
+    grid-area: no8;
+
+}
+#box-11{
+    grid-area: no9;
+}
+#box-12{
+    grid-area: mul;
+}
+#box-13{
+    grid-area: no4;
+}
+#box-14
+{
+    grid-area: no5;
+}
+#box-15{
+    grid-area: no6;
+}
+#box-16{
+    grid-area: sb;
+
+}
+#box-17{
+    grid-area: no1;
+
+}
+#box-18{
+    grid-area: no2;
+
+}
+#box-19{
+    grid-area: no3;
+
+}
+#box-20{
+    grid-area: ad;
+
+}
+
+#box-21{
+    grid-area: no0;
+
+}
+#box-22{
+    grid-area: no0;
+
+}
+#box-23{
+    grid-area: no0;
+    text-align: center;
+
+}
+#box-24{
+    grid-area: eq;
+
+}
+
+@media screen and (max-width:300px) {
+    .container{
+        display: grid;
+        grid-template-columns: repeat(4,25fr);
+        /* background-color: red; */
+        
+   }
+    .box{
+        padding: 4px;
+    }
+ 
+}

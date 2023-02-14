@@ -1,0 +1,31 @@
+div{
+    border: 2px solid red;
+    background-color: cornsilk;
+    width: 20vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    margin:  200px;
+    padding: 20px;
+}
+
+p{
+    border:  2px solid green;
+}
+
+a{
+    padding: 10px;
+    border: 2px solid blue;
+    text-decoration: none;
+    font-weight: 900;
+    
+}
+a:hover
+{
+    background-color: rgb(169, 0, 241);
+    color: white;
+    transition: 1s ease-in-out 0.5s;
+    transform: rotate(30deg) scale(2);
+}
