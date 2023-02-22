@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav{
+    background: #1e202c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: aliceblue;
+    padding: 10px;
+    position:fixed;
+    width: 100%;
+    font-size: 1.3rem;
+    position: relative;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: a;
+    color: aliceblue;
+    display: block;
+}
+
+#toggler{
+    position: absolute;
+    top: 15px;
+    right: 50px;
+}
+
+a:hover{
+    background-color: #4b4a49;
+
+}
+
+ul{
+    
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.spacer{
+    height: 1000px;
+}
+
+.nav-menu{
+    text-align: center;
+    padding: 20px;
+}
+
+/*  toggle functionality using the dom / toggle/change class */
+#nav-links{
+    display: none; 
+}
+#nav-links.active{
+    display: block;
+}
+
+@media (min-width: 500px) 
+{
+    nav{
+        flex-direction: row;
+    }
+    ul{
+        flex-direction: row;
+    }
+    .banner{
+        margin-top: 20px;
+    }
+    #toggler{
+        display: none;
+    }
+    #nav-links{
+        display: inline; 
+    }
+}
+
+
