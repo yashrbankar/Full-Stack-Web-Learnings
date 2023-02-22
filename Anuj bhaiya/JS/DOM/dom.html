@@ -5,8 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Learning</title>
+    <style>
+        body{
+            background-color:#ffc8dd;
+        }
+        .container{
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 5%;
+            margin-inline: auto;
+            border: 2px dotted black;
+            padding: 5%;
+            background-color: #cdb4db;
+        }
+        .box{
+            border: 2px solid blue;
+            padding: 10px;
+            background-color: #a8dadc;
+            margin: 5px;
+            
+        }
+        .green{
+            background-color: greenyellow;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="box" id="box-1">box-1</div>
+        <div class="box" id="box-2"><strong>box-2</strong></div>
+        <div class="box" id="box-3">box-3</div>
+        <div class="box" id="box-4"><strike>box-4</strike></div>
+        <div class="box" id="box-5">box-5</div>
+        <div class="box" id="box-6">box-6</div>
+        <div class="box" id="box-7">box-7</div>
+    </div>
+    <img src="" alt="" id="img1">
+    <script src="learningDOM.js"></script>
 </body>
 </html>
