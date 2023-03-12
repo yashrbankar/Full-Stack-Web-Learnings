@@ -63,7 +63,7 @@ ul{
     display: block;
 }
 
-@media (min-width: 500px) 
+@media (min-width: 600px) 
 {
     nav{
         flex-direction: row;
